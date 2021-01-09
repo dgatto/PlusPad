@@ -80,12 +80,12 @@
                     }
 
                     // F5 by X Button
-                    if (gamePadState.Buttons.X == Microsoft.Xna.Framework.Input.ButtonState.Pressed
-                        && this.previousGamePadState.Buttons.X == Microsoft.Xna.Framework.Input.ButtonState.Released)
-                    {
-                        padSettings.PressKey(Win32.ScanCodeShort.F5, Win32.VirtualKeyShort.F5);
-                        padSettings.ReleaseKey(Win32.ScanCodeShort.F5, Win32.VirtualKeyShort.F5);
-                    }
+                   // if (gamePadState.Buttons.X == Microsoft.Xna.Framework.Input.ButtonState.Pressed
+                  //      && this.previousGamePadState.Buttons.X == Microsoft.Xna.Framework.Input.ButtonState.Released)
+                  //  {
+                 //       padSettings.PressKey(Win32.ScanCodeShort.F5, Win32.VirtualKeyShort.F5);
+                 //       padSettings.ReleaseKey(Win32.ScanCodeShort.F5, Win32.VirtualKeyShort.F5);
+                //    }
 
                     this.padSettings.PerformMove(gamePadState, this.previousGamePadState);
 
